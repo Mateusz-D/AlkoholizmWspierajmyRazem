@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: whitesmoke;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow:auto;
+    text-align: center;
+    background-attachment: fixed;
+  }
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value to control darkness */
+  z-index: -1;
+  }
+
+.main {
+    width: 50vw;
+    min-height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40vh;
+    text-align: center;
+    justify-content: center;
+  }
+
+.content {
+    padding-top: 10vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
+
+#wywiad {
+
+  }
+
+#wywiad h1 {
+    }
+
+#wywiad h2 {
+    }
+
+#wywiad p {
+    font-style: italic;
+    }
+
+.pyt {
+    font-weight: bold;
+}
+
+h1 {
+
+  }
+
+h2 {
+
+  }
+
+p {
+
+  }
