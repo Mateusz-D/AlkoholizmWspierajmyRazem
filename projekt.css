@@ -1,69 +1,172 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    color: whitesmoke;
-    background-image: url('background.jpg');
-    background-repeat: no-repeat;
-    background-size:cover;
-    overflow:auto;
-    text-align: center;
-    background-attachment: fixed;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color:  #dde1d6 ;
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  overflow:auto;
+  text-align: center;
+  background-attachment: fixed;
+}
 
 body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value to control darkness */
-  z-index: -1;
-  }
+content: '';
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value to control darkness */
+z-index: -1;
+}
 
 .main {
-    width: 50vw;
-    min-height: 50vh;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 40vh;
-    text-align: center;
-    justify-content: center;
-  }
+  width: 50vw;
+  min-height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40vh;
+  padding-bottom: 20vh;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main a {
+
+  padding-top: 1vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 1vh;
+  background-color: azure;
+  color: black;
+  border-radius: 30px;
+}
 
 .content {
-    padding-top: 10vh;
-    padding-left: 20vw;
-    padding-right: 20vw;
-  }
+  padding-bottom: 10vh;
+  padding-left: 25vw;
+  padding-right: 25vw;
+  font-size: larger;
+}
 
 #wywiad {
 
-  }
+}
 
 #wywiad h1 {
-    }
+  }
 
 #wywiad h2 {
-    }
+  }
 
 #wywiad p {
-    font-style: italic;
-    }
+  font-style: italic;
+  }
 
 .pyt {
-    font-weight: bold;
+  font-weight: bold;
 }
+
+.pomoc {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-column-gap: 4vw;
+       -moz-column-gap: 4vw;
+            column-gap: 4vw;
+
+    font-size: larger;
+
+
+    margin: auto;
+}
+
+div.pomoc#links {
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.boldp {
+font-weight: bold;
+}
+
 
 h1 {
 
-  }
+}
 
 h2 {
 
-  }
+}
 
 p {
 
+}
+
+a:link {
+  color:  none;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: currentColor;
+  text-decoration: none;
+}
+
+a#button:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+a#button:hover {
+  color: #dde1d6;
+  text-decoration: none;
+  background-color:#8a8e84 ;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    padding-bottom: 10vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    font-size: larger;
+    }
   }
